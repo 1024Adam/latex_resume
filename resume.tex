@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 
-
+% Page margins
 \usepackage{geometry}
   \geometry{
     headsep=0.2in,
@@ -10,20 +10,34 @@
     bmargin=1in
   }
 
+% Font
 \usepackage[scaled]{helvet}
 \renewcommand\familydefault{\sfdefault} 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \raggedright
 
+% Formatting for lists
 \usepackage{enumitem}
 \setlist{nosep}
-
-\usepackage{tabu}
 \usepackage{amssymb}
 \renewcommand{\labelitemi}{\tiny$\blacksquare$}
-\usepackage{hyperref}
 
+% Formatted table
+\usepackage{tabu}
+
+% Links/Bookmarks
+\usepackage[bookmarks=true]{hyperref}
+\usepackage{bookmark}
+
+% Formatting for sections
+\usepackage{titlesec}
+\titlespacing\section{0pt}{0pt}{0pt}
+\titleformat{\section}
+  {\normalfont\bfseries}{\thesection}{0em}{}
+\renewcommand\thesection{}
+
+% Header formatting
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -38,20 +52,25 @@
   \fancyhead[R]{Page \thepage\ of \pageref{LastPage}}
 }
 
+% vspace formatting
 \newcommand{\doublespace}{\vspace{8pt}}
+
+% Paragraph indent formatting
 \setlength{\parindent}{0cm}
 
 \begin{document}
+
+% General Information
 {\huge Adam Reid}\\
-30 Smauel Crescent\\
-Georgetown, ON, L7G 5G3\\
-(905)-877-1529\\
+00 Xxxxxx Xxxxxxxx\\
+Georgetown, ON, L7G 5H3\\
+(123)-456-7890\\
 \href{mailto:areid09@mail.uoguelph.ca}{areid09@mail.uoguelph.ca}
 \noindent\rule{6in}{0.4pt}
 
 \doublespace
 
-\textbf{Summary of Skills}
+\section{Summary of Skills}
 
 \doublespace
 
@@ -69,7 +88,7 @@ Georgetown, ON, L7G 5G3\\
 
 \doublespace
 
-\textbf{Education}
+\section{Education}
 
 \doublespace
 
@@ -101,7 +120,7 @@ Georgetown, ON, L7G 5G3\\
 
 \doublespace
 
-\textbf{Project Experience}
+\section{Project Experience}
 
 \doublespace
 
@@ -120,7 +139,7 @@ Georgetown, ON, L7G 5G3\\
 \newpage
 \pagestyle{normal}
 
-\textbf{Work Experience}
+\section{Work Experience}
 
 \doublespace
 
