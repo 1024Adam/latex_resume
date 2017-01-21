@@ -3,16 +3,18 @@
 
 \usepackage{geometry}
   \geometry{
-  headsep=0.2in,
-  headheight=14.5pt,
-  lmargin=1in,
-  rmargin=1.5in,
+    headsep=0.2in,
+    headheight=14.5pt,
+    lmargin=1in,
+    rmargin=1.5in,
+    bmargin=1in
   }
 
 \usepackage[scaled]{helvet}
 \renewcommand\familydefault{\sfdefault} 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\raggedright
 
 \usepackage{enumitem}
 \setlist{nosep}
@@ -20,6 +22,7 @@
 \usepackage{tabu}
 \usepackage{amssymb}
 \renewcommand{\labelitemi}{\tiny$\blacksquare$}
+\usepackage{hyperref}
 
 \usepackage{lastpage}
 \usepackage{fancyhdr}
@@ -35,6 +38,7 @@
   \fancyhead[R]{Page \thepage\ of \pageref{LastPage}}
 }
 
+\newcommand{\doublespace}{\vspace{8pt}}
 \setlength{\parindent}{0cm}
 
 \begin{document}
@@ -42,32 +46,32 @@
 30 Smauel Crescent\\
 Georgetown, ON, L7G 5G3\\
 (905)-877-1529\\
-areid09@mail.uoguelph.ca\\
+\href{mailto:areid09@mail.uoguelph.ca}{areid09@mail.uoguelph.ca}
 \noindent\rule{6in}{0.4pt}
 
-\vspace{12pt}
+\doublespace
 
 \textbf{Summary of Skills}
 
-\vspace{12pt}
+\doublespace
 
 { 
   \small
   \begin{itemize}
-    \item Proficient using Java, C, C\#, SQL, ASP.NET, PHP, HTML, including JavaScript, CSS and C++, XML, Python, MATLAB, and VBA
+    \item Proficient developing in Java, C, C\#, SQL, PHP, HTML, JavaScript, CSS, Python, C++, and MATLAB
     \item Possess valuable oral and written skills established by producing documentation for approximately forty different programs that I have created
-    \item Have programmed on many popular operating systems, such as Windows, OSX, and Linux
-    \item Have a high ability to quickly learn and apply new concepts, as demonstrated by my continuous learning and implementation of different programming and testing methodologies
+    \item Have used many popular operating systems, such as Windows, OSX, and Linux
+    \item Have a high ability to quickly learn and apply new concepts, as demonstrated by my implementation of many different programming and testing methods
     \item Can easily solve problems efficiently, using a variety of logical approaches, both mathematically, and computationally
     \item Have a strong ability to multitask in order to complete tasks more efficiently
   \end{itemize}
 }
 
-\vspace{12pt}
+\doublespace
 
 \textbf{Education}
 
-\vspace{12pt}
+\doublespace
 
 {
   \small
@@ -82,7 +86,7 @@ areid09@mail.uoguelph.ca\\
   \end{itemize}
 }
 
-\vspace{12pt}
+\doublespace
 
 {
   \small
@@ -94,7 +98,78 @@ areid09@mail.uoguelph.ca\\
     \item Graduated as an Ontario Scholar
   \end{itemize}
 }
+
+\doublespace
+
+\textbf{Project Experience}
+
+\doublespace
+
+{
+  \small
+  \begin{itemize}
+    \item GitHub Profile: \href{https://github.com/1024Adam}{https://github.com/1024Adam}
+    \item Developed an encoder/decoder program in C to efficiently compress files using the Huffman encoding method
+    \item Building a meal organization application in PHP, which generates PDF grocery lists based on the user-selected meals
+    \item Produced a day planner program in Java using Swing that helps people easily organize and schedule tasks
+    \item Developed a program in C and Java which generates user interfaces based on a configuration input file
+    \item Collaborated with a team to contribute to the GitHub project Piskel, which is written in JavaScript, HTML, and CSS
+  \end{itemize}
+}
+
 \newpage
 \pagestyle{normal}
-New Page
+
+\textbf{Work Experience}
+
+\doublespace
+
+{
+  \small
+  \noindent\begin{tabu} {@{} X[l] X[r]}
+    \textbf{Software Developer} & January 2017 - Present
+  \end{tabu}
+  Brock Solutions, Kitchener, ON
+  \begin{itemize}
+    \item Design, develop, and maintain secondary performance human-machine interfaces for clients, which allow for the analysis, and modification of production data supplied by different machines and workers
+    \item Detect, and report bugs that have been discovered through department code reviews or testing procedures 
+    \item Investigate, and implement effective solutions to defects found in a variety of different programs that have been made
+    \item Conference directly with clients on project specifications to ensure that their needs are met with respect to the product being developed
+  \end{itemize}
+}
+
+\doublespace
+
+{
+  \small
+  \noindent\begin{tabu} {@{} X[l] X[r]}
+    \textbf{Application Developer} & May 2016 - December 2016
+  \end{tabu}
+  University of Guelph, Guelph, ON
+  \begin{itemize}
+    \item Responsible for redesigning the Hospitality Services Online Services website, which processes thousands of dollars in transactions on a daily basis, written in C\#, HTML, CSS, and JavaScript in a .NET environment
+    \item Maintain and update pre-existing web applications written in a variety of languages, mainly ColdFusion, PHP, C\#, HTML, CSS, and JavaScript
+    \item Perform numerous SQL queries, using Microsoft SQL Server, in order to get crucial data from tables in an efficient manner
+    \item Write detailed operating manuals on how to properly use the web applications used by Hospitality Services, so future users can easily navigate through the system
+    \item Provide support for, and manage numerous Microsoft Windows Servers, ensuring that all issues are dealt with quickly, and effectively
+  \end{itemize}
+}
+
+\doublespace
+
+{
+  \small
+  \noindent\begin{tabu} {@{} X[l] X[r]}
+    \textbf{Quality Assurance Analyst} & May 2015 - December 2015
+  \end{tabu}
+  The Co-operators, Guelph, ON
+  \begin{itemize}
+    \item Create automated test scripts in Java using Selenium in order to simplify the testing process, and produce more consistent test results during regression testing stages
+    \item Perform system integration testing, functional testing, and regression testing in Guidewire PolicyCenter software, resulting in a better final product overall for customers
+    \item Lead system integration testing for a software upgrade, involving the production of a test approach, the creation of a test schedule, and reporting the test status at daily meetings
+    \item Review XML to further determine the causes and resolutions of defects
+    \item Document defects and bugs found in the testing process, reporting over thirty system defects per month
+  \end{itemize}
+}
+
 \end{document}
