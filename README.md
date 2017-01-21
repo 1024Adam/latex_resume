@@ -1,2 +1,2 @@
-# latex_resume
+# LaTeX Resume
 My Resume (LaTeX)
